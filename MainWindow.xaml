@@ -1,0 +1,19 @@
+﻿<Window x:Class="TinyClock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TinyClock"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight" 
+        AllowsTransparency="True" 
+        ShowInTaskbar="False" 
+        Topmost="True" 
+        Background="Transparent" 
+        Left="0" 
+        Top="0"
+        d:DataContext="{d:DesignInstance local:MainViewModel}" Opacity="0.75">
+    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontFamily="{StaticResource Pixel}" FontSize="16" Text="{Binding Time}" Foreground="White" ClipToBounds="True" />
+</Window>

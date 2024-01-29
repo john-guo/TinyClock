@@ -1,0 +1,9 @@
+﻿<Application x:Class="TinyClock.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TinyClock"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="Pixel">pack://application:,,,/#Pixel LCD7</FontFamily>
+    </Application.Resources>
+</Application>
