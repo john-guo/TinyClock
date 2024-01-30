@@ -14,6 +14,6 @@
         Background="Transparent" 
         Left="0" 
         Top="0"
-        d:DataContext="{d:DesignInstance local:MainViewModel}" Opacity="0.75">
-    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontFamily="{StaticResource Pixel}" FontSize="16" Text="{Binding Time}" Foreground="White" ClipToBounds="True" />
+        d:DataContext="{d:DesignInstance local:MainViewModel}" Opacity="{Binding Opacity}">
+    <TextBlock x:Name="display" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontFamily="{StaticResource Pixel}" FontSize="16" Text="{Binding Time}" Foreground="White" ClipToBounds="True" />
 </Window>

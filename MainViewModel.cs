@@ -19,6 +19,9 @@ namespace TinyClock
         private void OnPropertyChanged([CallerMemberName] string name = "") => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 
 
+        private double opacity = 0.75;
+        public double Opacity { get => opacity; set { opacity = value; OnPropertyChanged(); } }
+
         private void Refresh()
         {
             Time = DateTime.Now.TimeOfDay.ToString(@"hh\:mm\:ss");

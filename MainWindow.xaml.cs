@@ -21,5 +21,13 @@ namespace TinyClock
             InitializeComponent();
             DataContext = new MainViewModel();
         }
+
+
+        protected override void OnContentRendered(EventArgs e)
+        {
+            base.OnContentRendered(e);
+
+            Left = SystemParameters.WorkArea.Width - ActualWidth;
+        }
     }
 }
